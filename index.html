@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower Swipe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <!-- Start Screen -->
+        <div id="startScreen" class="screen">
+            <h1>Tower Swipe</h1>
+            <button id="startButton">Start Game</button>
+            <p>Use arrow keys or swipe to move blocks</p>
+        </div>
+
+        <!-- Game Elements -->
+        <canvas id="gameCanvas"></canvas>
+        <div class="score">Score: <span id="scoreValue">0</span></div>
+
+        <!-- Death Screen -->
+        <div id="deathScreen" class="screen hidden">
+            <h2>Game Over!</h2>
+            <p>Final Score: <span id="finalScore">0</span></p>
+            <button id="restartButton">Play Again</button>
+        </div>
+
+        <!-- Pause Screen -->
+        <div id="pauseScreen" class="screen hidden">
+            <h2>Paused</h2>
+            <button id="resumeButton">Resume</button>
+            <button id="quitButton">Quit</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html> 
